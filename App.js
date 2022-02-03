@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
   },
   climeight: {
     position: "absolute",
-    left: "1%",
-    top: "1%",
+    left: 20,
+    top: 30,
     color: "black",
     fontSize: 22,
     fontWeight: 700,
