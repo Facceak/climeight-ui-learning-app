@@ -1,28 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-const { View } = require("react-native-web");
-
-class OffersButton extends React.Component {
-    render() {
-        return (
+export default function OffersButton({btntext}) {
+    return (
             <View style={styles.button_bg}>
-                <Text style={styles.btnvalue}></Text>
+                <Text style={styles.btnvalue}>{btntext}</Text>
             </View>
-        );
-    }
-}
+    );
+  };
 
 const styles = StyleSheet.create({
     button_bg: {
-        width: "50%",
-        height: 20,
-        backgroundColor: "blue",
+        width: "90%",
+        height: "6%",
+        borderRadius: 15,
+        backgroundColor: "white",
+
         
     },
     btnvalue: {
-        fontSize: 15,
-        color: "white"
+        width: "100%",
+        height: "100%",
+        justifyContent: "center",
+        textAlign: "center",
+        fontWeight: 600,
+        fontSize: 20,
+        color: "black",
+        
     }
 
 });

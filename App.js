@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
-
+import OffersButton from './assets/components/OffersButton';
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.modal}></View>
       <Text style={styles.climeight}>climeight.</Text>
+      <OffersButton btntext={"JETZT REGISTRIEREN"}/>
       <StatusBar style="auto" />
     </View>
   );
