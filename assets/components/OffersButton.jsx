@@ -18,9 +18,7 @@ const styles = StyleSheet.create({
     button_bg: {
         width: "80%",
         height: "20%",
-        backgroundColor: "white"
-
-        
+        backgroundColor: "white",     
     },
     btnvalue: {
         width: "100%",
