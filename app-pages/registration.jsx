@@ -1,21 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { TextInput } from 'react-native-web';
-
+import Input from '../assets/components/registration_input';
 import OffersButton from "../assets/components/OffersButton"
 
 export default function Registration() {
   return (
     <View style={styles.inner_container}>
+
       <View style={styles.form_registration}>
-        <View style={styles.registration_view}>
+
+        <View style={styles.registration_view} >
+
           <Text style={styles.label_registration}>E-Mail Adresse:</Text>
           <TextInput style={styles.input_email}/>
+
         </View>
-        <View style={styles.registration_view}>
-          <Text style={styles.label_registration}>Vorname</Text>
-          <TextInput style={styles.input_first_name}/>
-        </View>
+
+
+
       </View>
       <StatusBar style="auto" />
     </View>
@@ -64,5 +67,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgb(224, 224, 224)",
     borderRadius: 20,
+  },
+  email: {
+    top: "15%"
   }
 });
